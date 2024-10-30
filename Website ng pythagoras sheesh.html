@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Von Pogi - Biography of Pythagoras</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            height: 100vh;
+            overflow: hidden; 
+            background: linear-gradient(to bottom right, #a8d8ea, #b3e4f1); 
+            color: #333; 
+        }
+
+        
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+            padding: 20px;
+            height: calc(100vh - 120px); 
+            overflow: auto; 
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px; 
+            position: relative; 
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+        }
+
+        
+        header {
+            background: rgba(51, 153, 204, 0.9); 
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+        }
+
+       
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(85, 153, 204, 0.9); 
+            padding: 10px;
+            position: relative;
+            border-radius: 10px; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 5px; 
+            transition: background 0.3s; 
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.3); 
+        }
+
+        
+        .main-content {
+            background: rgba(244, 244, 244, 0.9); 
+            padding: 20px;
+            height: 100%; 
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        .sidebar {
+            background: rgba(221, 221, 221, 0.8); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+        }
+
+       
+        footer {
+            background: rgba(51, 153, 204, 0.9); 
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 10px; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+        }
+
+       
+        .gallery {
+            display: none; 
+            padding: 20px;
+            height: calc(100vh - 120px);
+            overflow: auto;
+            background: rgba(255, 255, 255, 0.9); 
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <h1>Von Pogi</h1>
+        <p>Welcome to the biography of Pythagoras</p>
+    </header>
+
+    
+    <nav>
+        <a onclick="showContent('home')">Home</a>
+        <a onclick="showContent('gallery')">STEM Students na Mababait</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    
+    <div id="home" class="container">
+      
+        <aside class="sidebar">
+            <h2>Pythagoras' Famous Works</h2>
+            <ul>
+                <li>Pythagorean Theorem: \( a^2 + b^2 = c^2 \)</li>
+                <li>Pythagorean Triples: Sets of three positive integers \( (a, b, c) \) that satisfy the theorem</li>
+                <li>Concept of Numbers: He proposed that numbers have intrinsic meanings and relationships.</li>
+                <li>Mathematics of Music: He discovered that musical intervals can be expressed in simple numerical ratios.</li>
+                <li>Geometry: Contributions to geometric properties and shapes.</li>
+            </ul>
+        </aside>
+
+    
+        <main class="main-content">
+            <h2>Pythagoras: The Father of Numbers</h2>
+            <p>Pythagoras was an ancient Greek philosopher and mathematician, best known for his contributions to mathematics, especially the Pythagorean Theorem, which states that in a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides.</p>
+            <p>Born on the island of Samos around 570 BCE, Pythagoras traveled widely in search of knowledge and later founded a school in Croton, Italy. His school promoted a philosophy that combined mathematics, spirituality, and ethics. He and his followers believed that numbers were the essence of all things and that the universe was fundamentally ordered by mathematical principles.</p>
+            <p>Despite the importance of his contributions, much about Pythagoras’ life remains a mystery, as his teachings were passed down orally, and little of his original work survives. Nonetheless, his ideas influenced mathematics, astronomy, and philosophy and continue to be studied to this day.</p>
+        </main>
+    </div>
+
+   
+    <div id="gallery" class="gallery">
+        <h2>STEM Students na Mababait</h2>
+        <h3>Male Students</h3>
+        <ul>
+            <li>Aeron</li>
+            <li>Aron</li>
+            <li>Brayden</li>
+            <li>Brent</li>
+            <li>Gimuel</li>
+            <li>Jieroh</li>
+            <li>John Jairus</li>
+            <li>Jhonas</li>
+            <li>Joppe</li>
+            <li>LeBron</li>
+            <li>Markisvan</li>
+            <li>Mattew</li>
+            <li>Mhitho</li>
+            <li>Ryner</li>
+            <li>Romel</li>
+            <li>Sebastien</li>
+            <li>Shin Rain</li>
+            <li>Von</li>
+        </ul>
+        <h3>Female Students</h3>
+        <ul>
+            <li>Ashley O</li>
+            <li>Ashley</li>
+            <li>Caila</li>
+            <li>Edjalyn</li>
+            <li>Jaica</li>
+            <li>Jen Ashley</li>
+            <li>Kate</li>
+            <li>Kc</li>
+            <li>Micolle</li>
+            <li>Rachelle</li>
+            <li>Rena</li>
+            <li>Shaina</li>
+            <li>Sophia</li>
+            <li>Zhyra</li>
+        </ul>
+    </div>
+
+   
+    <footer>
+        <p>&copy; 2024 Von Pogi</p>
+    </footer>
+
+   
+    <script>
+        function showContent(section) {
+            document.getElementById('home').style.display = section === 'home' ? 'block' : 'none';
+            document.getElementById('gallery').style.display = section === 'gallery' ? 'block' : 'none';
+        }
+        
+       
+        showContent('home');
+    </script>
+
+</body>
+</html>
